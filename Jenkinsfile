@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-            DOCKER_HUB_CREDS = credentials(ihor-docker-hub)
+            DOCKER_HUB_CREDS = credentials('ihor-docker-hub')
     }
     stages {
         stage('release') {
