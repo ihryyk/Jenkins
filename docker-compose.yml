@@ -1,8 +1,6 @@
-version: '2'
+version: '2.1'
 services:
-
   jenkins:
-    build:
-      context: .
+    image: ihryyk/jenkins:jenkins
     ports:
       - "8081:8081"
